@@ -1,0 +1,306 @@
+.Formlabel{
+	font-weight: bold;
+	text-align: center;
+}
+.Formtxtbox{
+	border-style:solid;	
+	border-top: thick ;
+	border-right: thick;
+	border-left: thick;
+	
+	font-weight: bold;
+	font-size: 16px;
+}
+#Address{
+	border:thin dashed;
+}
+#parents{
+	border:thin dashed;
+}
+#childern{
+	border:medium dashed;
+}
+.status{
+	width: 30px;
+	border: #00ffff thin;
+	
+}
+li{
+	list-style-type:none;
+	width:98%;
+}
+.SearchItemResult{
+	margin: 0px;
+	left: 0px;	
+	font-weight: bold;
+	font-size: 22px;	
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+        width:100%;
+        vertical-align: top;
+        
+}
+a{
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: blue;
+}
+
+.highLight{
+	background: #EEEEEE;
+      
+}
+.bold{
+	font-weight: bold;
+	font-size: 18px;	
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#searchResult{
+	width:349px;	
+	border: 1px solid gray;
+	border-top-style: none;
+	
+	font-size: 24px;
+	background-color:#FFFFFF;
+	/*position: absolute;
+	z-index: 1000;
+	 top:0; left:0;
+	display: inline-block;
+	*/
+	
+	/*z-index: 222;*/
+	-moz-box-shadow: 0px 1px 10px 1px #999;
+	-webkit-box-shadow: 0px 1px 10px 1px #999;
+	box-shadow: 0px 1px 10px 1px #999;
+
+}
+#NewSearchResults{
+	width:373px;	
+	border: 1px solid gray;
+	border-top-style: none;
+	
+	font-size: 24px;
+	background-color:#FFFFFF;
+	/*position: absolute;
+	z-index: 1000;
+	 top:0; left:0;
+	display: inline-block;
+	
+        margin-right: 19px;
+       */
+	position: relative; 
+	/*z-index: 222;*/
+	-moz-box-shadow: 0px 1px 10px 1px #999;
+	-webkit-box-shadow: 0px 1px 10px 1px #999;
+	box-shadow: 0px 1px 10px 1px #999;
+
+}
+
+.outterSearchResult{
+	position: relative; 
+	width:351px;
+}
+#SearchBox{
+	width:358px;
+        font-size: 24px;
+        font-weight: bold;
+	overflow: hidden;
+	/*height:30px;
+	border: 1px solid gray;
+	
+	
+	/*position: relative;*/
+}
+.search-btn{
+    height:30px;
+}
+input{
+	font-family: Arial, Helvetica, sans-serif;		
+     }
+.attend{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	background-color: #00FFFF;
+	height: 50px;
+	width: 200px;	
+}
+
+.personAttend{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 34px;
+	text-align: left;	
+	padding: 5px;	
+}
+.attended{
+	width: 110%;
+	color:#00AA00;
+	background-image: url('../images/cheched.gif');
+	background-position: right;
+	background-repeat: no-repeat;
+}
+.checkbox{
+	width:30px;
+	height:30px;	
+}
+
+.meeting{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	font-weight:bold;
+	text-align: center;	
+	padding: 15px;	
+}
+
+.displayInfo{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight:bold;
+	text-align: center;	
+	padding: 15px;	
+        border:solid 0px blue;
+	
+}
+.listAllMembers{
+	border: 1px solid gray;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+
+	padding: 5px;
+	width:100%;	
+	height:310px;
+	overflow:auto;
+}
+.listMember{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight:bold;
+	text-align: left;	
+
+	width:100%;
+	padding: 5px;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+.listMember:hover{
+	border: 1px solid gray;
+	background: #EEEEFF;
+	cursor: hand;	
+}
+.showInfo{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: right;
+	display: none;
+	text-decoration: none;
+}
+
+.listMember:hover div {
+	display: inline;		
+}
+.servant{
+	color: green;
+}
+.alphbet{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	text-decoration: none;
+	padding: 5px;
+}
+
+.floating{
+	position: absolute;
+	z-index: 5;
+	width: 40%;
+	height: 40%;
+	left: 35%;
+	top: 25%;
+	background: white;
+	-moz-box-shadow: 0px 1px 10px 1px #999;
+	-webkit-box-shadow: 0px 1px 10px 1px #999;
+	box-shadow: 0px 1px 10px 1px #999;
+}
+.attendanceTable{	
+	/*border: #00ffff thin;*/
+	border-collapse:collapse;
+	border: 1px solid gray;	
+	padding: 10px;
+	
+}
+.attendanceHeader{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	text-decoration: none;
+	padding: 15px;
+	font-weight:bold;
+	text-align: left;
+	/*
+	border: 1px solid gray;
+	background-color: #DDD;
+	*/
+}
+.attendanceCell{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	border: 1px solid gray;
+	padding: 15px;
+}
+
+.mainIcons{
+	border: 0;	
+	
+}
+
+
+.mainIcons:hover{
+	border: 1px solid gray;
+	background-color: #DDD;
+}
+
+.mainIconLink{
+	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: blue;
+	
+}
+.mainIconLink:visited{
+	color: blue;
+}
+
+
+.tabledata{ background-color: #cfcfcf; }
+.highlighttabledata{ background-color: #f00; }
+
+.headerBar{
+	position:fixed; 
+	top:0; 
+	left:0;
+	width:100%;
+	height: 15px; 
+	padding:10px; 
+	font-family:Arial; 
+	background:#EEF;
+	z-index: 2;  
+	opacity:0.8;
+	filter:alpha(opacity=80); 
+	font-weight: bold; 
+	
+	-moz-box-shadow: 2px 2px 2px #AAA; /* Firefox */
+  	-webkit-box-shadow: 2px 2px 2px #AAA; /* Safari and Chrome */
+  	box-shadow: 2px 2px 2px #AAA; /* Opera 10.5+, future browsers and IE6+ using IE-CSS3 */
+
+ 	behavior: url(ie-css3.htc);
+}
+.center{
+    text-align: center;
+}
+.left{
+     text-align: left;
+}
+.right{
+     text-align:right;
+}
