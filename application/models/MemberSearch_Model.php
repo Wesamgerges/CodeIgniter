@@ -35,7 +35,7 @@ class MemberSearch_Model extends CI_Model {
                 FROM person 
                 WHERE Phone like ? 
                 "
-                , $PhoneNo . '%'
+                , '%' . $PhoneNo . '%'
         );
 
         if ($results->num_rows < 1)
@@ -113,7 +113,7 @@ class MemberSearch_Model extends CI_Model {
             $htmlResults .= '<li id="' . $i++ . '" type="none" value="' . $row->id . '" onClick="getSelectedItem($(this).val());" onmouseover = "setSelectItem($(this).attr(\'id\'));"> ' .
                     '<table valign="TOP"  class="SearchItemResult" >
                         <tr>
-                        <td style="font-weight : 100; color:#999"> ' .  str_replace_occurance($words[0],'<strong style="color:black;">'.ucfirst($words[0]).'</strong>',$row->firstname ,1). ' ' . str_replace_occurance($words[1],'<strong style="color:black;">'.ucfirst($words[1]).'</strong>',$row->lastname ,1). '</td>
+                        <td style="font-weight : 100; color:#999"> &nbsp;' .  str_replace_occurance($words[0],'<strong style="color:black;">'.ucfirst($words[0]).'</strong>',$row->firstname ,1). ' ' . str_replace_occurance($words[1],'<strong style="color:black;">'.ucfirst($words[1]).'</strong>',$row->lastname ,1). '</td>
                             <td align="right" width="50px">' .
                     '<img src="include/images/cross-icon.png" style="width:50px;height:50px;" width = "50px" height = "50px" align = "middle" />
                         </td>

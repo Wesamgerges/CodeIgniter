@@ -24,10 +24,6 @@ class MemberSearch extends CI_Controller{
    {
       echo $this->MemberSearch_Model->GetMemberInformation($this->input->post("MemberId"));      
    }
-   public function test($id){
-       return json_encode($id);
-      // return; $this->input->get(2);
-   }
 }
 
 ?>

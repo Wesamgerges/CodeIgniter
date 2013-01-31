@@ -25,10 +25,12 @@
 	border: #00ffff thin;
 	
 }
+/*
 li{
 	list-style-type:none;
 	width:98%;
 }
+*/
 .SearchItemResult{
 	margin: 0px;
 	left: 0px;	
@@ -40,6 +42,7 @@ li{
         vertical-align: top;
         
 }
+/*
 a{
 	text-decoration: none;
 	font-family: Arial, Helvetica, sans-serif;
@@ -47,7 +50,7 @@ a{
 	font-weight: bold;
 	color: blue;
 }
-
+*/
 .highLight{
 	background: #EEEEEE;
       
@@ -116,10 +119,11 @@ a{
 }
 .search-btn{
     height:30px;
-}
+}/*
 input{
 	font-family: Arial, Helvetica, sans-serif;		
      }
+ */
 .attend{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 24px;

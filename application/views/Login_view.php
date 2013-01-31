@@ -26,7 +26,7 @@
         <table width="100%" height="95%">
             <tr>
                 <td align="center">           
-                    <img src="include/images/cms.gif">    
+                    <img src="include/images/CMS.gif">    
                 </td>
             </tr>
         </table>	

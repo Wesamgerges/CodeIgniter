@@ -1,7 +1,3 @@
-/* 
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
  
 var currentIndex = 1;
 $("document").ready(function(){
@@ -45,7 +41,7 @@ $("document").ready(function(){
                 }
                 $("li").removeClass("highLight");
                 $("#"+currentIndex).addClass("highLight");         
-                $('#detailedMessage2').html(currentIndex);
+                //$('#detailedMessage2').html(currentIndex);
                 break;
             // User pressed "enter"
             case 13:
@@ -75,12 +71,13 @@ $("document").ready(function(){
     });
 });
 function getSelectedItem(t){
+    /*
     $.post("MemberSearch/GetMemberInformation",{
         MemberId:t
     },function(data){
         $('#detailedMessage2').html(data).fadeIn();
     });
-
+*/
 }
 function setSelectItem(s){   		
     currentIndex = parseInt(s); 
