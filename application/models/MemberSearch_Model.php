@@ -48,7 +48,7 @@ class MemberSearch_Model extends CI_Model {
                     '<table valign="TOP" border="0" class="SearchItemResult" >
                         <tr>
                              <td align = "center" width = "50px" rowspan = "2" >' .
-                                '<img src = "include/images/cross-icon.png" width = "50px" height = "50px" align = "middle" />                                
+                                '<img src = "include/images/cross-icon.png" width = "50px" height = "50px" style="width:50px;height:50px;" align = "middle" />                                
                             </td>
                             <td align = "left" style="font-weight : 100; color:#999">' 
                                . str_replace_occurance($PhoneNo,'<strong style="color:black;">'.$PhoneNo.'</strong>',$row->phone,1) .

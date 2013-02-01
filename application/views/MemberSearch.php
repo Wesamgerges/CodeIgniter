@@ -21,51 +21,44 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </a>
-                <a class="brand" href="#">Wesam Gerges</a>
+                <a class="brand" href="#">ChMS</a>
                 <div class="nav-collapse">
                     <ul class="nav">
                         <li class="active"><a href="main">Home</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Education</a></li>                        
+                        <li><a href="#">Members</a></li>
+                        <li><a href="#">Meetings</a></li>
+                                            
                     </ul>
                     <ul class="nav pull-right">
                         <li>
                         </li>
-                        <li class="">
-                            <a href="#">
-                                <img src="include/images/bluemanmxxl.png" width="25px"> Login</a>
-                        </li>
                         <li>
-                            <a href="#"></a>
+                            <a href="#"><strong>User2</strong></a>
                         </li>
+                        <li class="">
+                             <a href="login/logout">
+                                <img src="include/images/bluemanmxxl.png" width="25px"> Logout</a>
+                        </li>
+                        
                     </ul>
 
                 </div>
             </div>
         </nav>  
-        
-        <div class="container-fluid"> 
+    
             <div class="row-fluid ">
-
-                <div class="span4"></div>
-                <div class="span4">
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <div class="btn-group" data-toggle="buttons-radio" id="Searchcriteria">
+                <div class="span12">
+                    
+                    <div class="span4 offset4 center">
+                       
+                        <div align = "right" id = "container" style = "width: 388px; " >  
+                             <div class="btn-group" data-toggle="buttons-radio" id="Searchcriteria">
                         <button type="button" class="btn btn-primary btn-large active" id ="native" onclick="active = 'Native';">Native</button>
                         <button type="button" class="btn btn-primary btn-large" onclick="active = 'Name';">Name</button>
                         <button type="button" class="btn btn-primary btn-large" onclick="active = 'Phone';">Phone</button>
                         <button type="button" class="btn btn-primary btn-large" onclick="active = 'Email';">Email</button>
                     </div> 
-                </div>
-                <div class="span4"></div>
-            </div>
-            <br/>
-            <div class="row-fluid ">
-                <div class="span12 center">
-                    <div class="span4"></div>
-                    <div class="span4">
-                        <div align = "right" id = "container" style = "width: 388px; " >  
+                        <br/><br/>
                             <form class="form-search" style = " ">
                                 <div class="input-append">
                                     <input type="text" class=" input-xlarge search-query" id="SearchBox" autocomplete="off">
@@ -81,7 +74,7 @@
                         </div>
 
                     </div>
-                    <div class="span4" id="memberInformation">
+                    <div class="span4" id="memberInformation" style="padding: 20px 20px;">
             
                     </div>                    
                 </div>
@@ -98,7 +91,7 @@
 
         <script type="text/template" id="MemberInfo">
             <div class="img-polaroid img-rounded" >
-                <img src="include/images/cross-icon.png" style="width: 180px;height: 180px" class=" pull-right"/>
+                <img src="include/images/cross-icon-big.png" style="width: 180px;height: 180px" class=" pull-right"/>
                 <br/>
                 <h3><%= FirstName + " " + LastName %></h3>
                 <% if ( native_name ) { %>
@@ -205,7 +198,7 @@
                     }
                 }) ;
                 $("#NewSearchResults").click(function(){
-                    $("#SearchBox").focus();
+                   // $("#SearchBox").focus();
                 });
             });
             /*
