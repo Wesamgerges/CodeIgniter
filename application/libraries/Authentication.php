@@ -37,6 +37,8 @@ class Authentication {
         else
         {
             $CI->session->set_userdata("user_id",$query->row()->id);
+            $CI->session->set_userdata("user_firstname",$query->row()->firstname);
+            $CI->session->set_userdata("user_lastname",$query->row()->lastname);
             return $query->row()->firstname;
         }
     }

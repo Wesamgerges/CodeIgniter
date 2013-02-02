@@ -57,7 +57,7 @@ $("document").ready(function(){
             $('#NewSearchResults').hide();
             return;
         }		
-        $.post("MemberSearch/search",{
+        $.post("membersearch/search",{
             searchword:$("#SearchBox").val(),
             criteria:active//"Native"//$("input[name='radio']:checked").attr("id")
             },function(data){

@@ -75,13 +75,13 @@
                     <div id="person2">
                         <table>
                             <tr>
-                                <td class="Formlabel" width="50px"> Spouse Name:                                </td>
-                                <td> <input class="Formtxtbox" id="FirstName2" name="FirstName2" value="" >     </td>
-                                <td> <input class="Formtxtbox" id="LastName2" name="LastName2" value="">        </td>	
-                                <td> <input class="Formtxtbox" id="NativeName2" name="native_name2" value="" >  </td>                                                                
-                                <td> <input class="Formtxtbox" id="Phone2" name="Phone2" size='10' value=""> 	</td>				
-                                <td> <input class="Formtxtbox" id="Email2" name="Email2" value="">              </td>				
-                                <td class="status"> <input type="hidden" id="Status2"                           </td>				
+                                <td class="Formlabel" width="50px"> Spouse Name:                                        </td>
+                                <td> <input class="Formtxtbox" id="FirstName2"      name="FirstName2"       value="">   </td>
+                                <td> <input class="Formtxtbox" id="LastName2"       name="LastName2"        value="">   </td>	
+                                <td> <input class="Formtxtbox" id="NativeName2"     name="native_name2"     value="">   </td>                                                                
+                                <td> <input class="Formtxtbox" id="Phone2"          name="Phone2" size='10' value=""> 	</td>				
+                                <td> <input class="Formtxtbox" id="Email2"          name="Email2" value="">             </td>				
+                                <td class="status"> <input type="hidden" id="Status2"                                   </td>				
                             </tr> 
                             <tr>
                                 <td>                                </td>
@@ -157,7 +157,8 @@
                 <div id="message"></div>
             </div>
             <!---------------------------------------------------->	
-            <script language="javascript" src="include/JS/JS.js"></script>
+           
         </form>
+         <script language="javascript" src="include/JS/JS.js"></script>
     </body>
 </html>

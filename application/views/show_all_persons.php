@@ -1,51 +1,37 @@
 <?php
-
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  * Description of show all persons
  *
  * @author Wesam Gerges
  */
 ?>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=encoding">
-<link href="include/css/stylesheet.css" media="all" rel="stylesheet" type="text/css" />
-
-<title>Show All Persons </title>
-
-<script language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-<?php 
-    $status = array('Single','Married');
-?>
-</head>
- <h1 align="center"> Show All Persons </h1>
-  <body>
-	<table border=1 align="center">
-	    <tr class="highLight bold">
-	        <td >
-	            FirstName
-	        </td>
-	        <td >
-	            LastName
-	        </td>
+ 
+          
+  <?php 
+        $status = array('Single','Married');
+    ?>
+       <h1 align="center"> Show All Persons </h1>
+	<table align="center" class="table table-bordered table-striped" style="width:50%">
+	    <tr class=" bold">
+	        <th >
+	            First Name
+	        </th>
+	        <th >
+	            Last Name
+	        </th>
 	<!--        <td >
 	            DOF
 	        </td>
 	--->        
-	        <td >
+	        <th >
 	            Phone
-	        </td>
-	        <td >
+	        </th>
+	        <th >
 	            Email
-	        </td>
-	         <td >
+	        </th>
+	         <th >
 	            Status
-	        </td>
+	        </th>
 	   </tr>
 
 <?php
@@ -53,7 +39,7 @@ $i=1;
 foreach ($persons->result() as $person)
 {
 ?>
-    <tr class='abc <?php if(($i++)%2 == 0)echo " highLight"; ?>' id='<?php echo $person->FamilyId;?>' >
+    <tr class='abc <?php if(($i++)%2 == 0)echo " "; ?>' id='<?php echo $person->FamilyId;?>' >
         <td class='fn'>
             <?php echo $person->FirstName;?>
         </td>
@@ -66,14 +52,14 @@ foreach ($persons->result() as $person)
 --->        
         <td>
             <?php
-          	if( $person->Phone == "") echo ".";
+          	if( $person->Phone == "") echo " ";
              	echo $person->Phone;
              ?>
         </td>
         <td>
              <?php 
-           	if( $person->Email =="") echo "."; 
-            	 echo $person->Email;
+           	if( $person->Email =="") echo " "; 
+            	 echo str_replace (",",",<br/>",$person->Email);
              ?>
         </td>
          <td>
@@ -104,6 +90,3 @@ $("document").ready(function(){
 });
     
 </script>
-
-</body>
-</html>

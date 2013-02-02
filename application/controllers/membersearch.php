@@ -12,9 +12,14 @@ class MemberSearch extends CI_Controller{
        // if( ! $this->authentication->logged_in() ) redirect("login"); 
         $this->load->model("MemberSearch_Model");            
     }
-    public function index()
+   public function index()
    {
-       $this->load->view("MemberSearch");
+       if( ! $this->authentication->logged_in() ) redirect("login"); 
+       $data['currentUser'] = $this->session->userdata('user_firstname');
+       $data['title'] = "Member Search";
+       $this->load->view("templates/header",$data);
+       $this->load->view("MemberSearch",$data);
+       $this->load->view("templates/footer",$data);
    }
    public function search()
    {
