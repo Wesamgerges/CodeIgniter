@@ -1,4 +1,34 @@
- 
+<?php
+/**
+     * Church Managment System
+     *
+     * An online application to manage churches
+     *
+     * @package     Views
+     * @author      Wesam Gerges
+     * @copyright   
+     * @license     
+     * @link        
+     * @since       Version 2.0
+     * @filesource
+     */
+   
+   // ------------------------------------------------------------------------
+   
+   /**
+    * ChurchMangementSystem main_view
+    * 
+    *
+    * Main view
+    * 
+    * @package     ChurchMangementSystem
+    * @subpackage  Views
+    * @category    View
+    * @author      Wesam Gerges
+    * @link        
+    */
+     
+?> 
         <?php
         $XDimension = 3;
         $YDimension = 2;

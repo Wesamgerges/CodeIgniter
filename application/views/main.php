@@ -1,3 +1,34 @@
+<?php
+/**
+     * Church Managment System
+     *
+     * An online application to manage churches
+     *
+     * @package     Views
+     * @author      Wesam Gerges
+     * @copyright   
+     * @license     
+     * @link        
+     * @since       Version 2.0
+     * @filesource
+     */
+   
+   // ------------------------------------------------------------------------
+   
+   /**
+    * ChurchMangementSystem main
+    * 
+    *
+    * Main
+    * 
+    * @package     ChurchMangementSystem
+    * @subpackage  Views
+    * @category    View
+    * @author      Wesam Gerges
+    * @link        
+    */
+     
+?>
 <style>
 	div{
 		color:red;

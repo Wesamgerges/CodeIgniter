@@ -1,3 +1,34 @@
+<?php
+/**
+     * Church Managment System
+     *
+     * An online application to manage churches
+     *
+     * @package     Views
+     * @author      Wesam Gerges
+     * @copyright   
+     * @license     
+     * @link        
+     * @since       Version 2.0
+     * @filesource
+     */
+   
+   // ------------------------------------------------------------------------
+   
+   /**
+    * ChurchMangementSystem SendEmail
+    * 
+    *
+    * Send Email
+    * 
+    * @package     ChurchMangementSystem
+    * @subpackage  Views
+    * @category    View
+    * @author      Wesam Gerges
+    * @link        
+    */
+     
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
@@ -313,11 +344,7 @@
 
                 /*
                  * Initializing the editor with a template
-                 */
-                /*$.get("templates/template1.html" ,function(data){					
-                                editor.setData(data);					
-                });
-                 */
+                 */                
                 getTemplates();
 			
                 $("#weeklymeeting option:first").attr('selected','selected');  			

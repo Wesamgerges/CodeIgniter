@@ -1,12 +1,47 @@
 <?php
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+ /**
+     * Church Managment System
+     *
+     * An online application to manage churches
+     *
+     * @package     Models
+     * @author      Wesam Gerges
+     * @copyright   
+     * @license     
+     * @link        
+     * @since       Version 2.0
+     * @filesource
+     */
+   
+   // ------------------------------------------------------------------------
+   
+   /**
+    * ChurchMangementSystem add_family_model Class
+    * 
+    * Extends CI_Model Class
+    *
+    * Add Family Class
+    * 
+    * @package     ChurchMangementSystem
+    * @subpackage  Models
+    * @category    Model
+    * @author      Wesam Gerges
+    * @link        
+    */
 
 class add_family_model extends CI_Model {
 
+     /**
+        * Method add_family
+        * 
+        * Add family to the database, base on the information passed from the
+        * controller
+        * 
+        * @access  public
+        *
+        * @return  stirng Confirmation 
+        */
     function add_family() {
         // save the family and return the family id
         if (!( $this->input->post("FirstName1") == "" )) {

@@ -13,7 +13,6 @@
     </head>
     <body>    
         
-        
         <nav class="navbar navbar-inverse">
             <div class="navbar-inner">
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -21,10 +20,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </a>
-                <a class="brand" href="main">ChMS</a>
+                <a class="brand" href="main">Church MS</a>
                 <div class="nav-collapse">
                     <ul class="nav">
-                        <li class="active"><a href="main">Home</a></li>
+                        <li class="active"><a href="main"><i class="icon-home icon-white"></i> Home</a></li>
                         <li><a href="#">Members</a></li>
                         <li><a href="#">Meetings</a></li>
                                             

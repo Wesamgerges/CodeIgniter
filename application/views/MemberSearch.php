@@ -1,5 +1,34 @@
- 
-
+<?php
+/**
+     * Church Managment System
+     *
+     * An online application to manage churches
+     *
+     * @package     Views
+     * @author      Wesam Gerges
+     * @copyright   
+     * @license     
+     * @link        
+     * @since       Version 2.0
+     * @filesource
+     */
+   
+   // ------------------------------------------------------------------------
+   
+   /**
+    * ChurchMangementSystem MemberSearch
+    * 
+    *
+    * Member Search
+    * 
+    * @package     ChurchMangementSystem
+    * @subpackage  Views
+    * @category    View
+    * @author      Wesam Gerges
+    * @link        
+    */
+     
+?>
 <div class="row-fluid ">
     <div class="span12">
 
@@ -123,10 +152,6 @@
             <h5><%= Email.replace("," , ",<br/>") %></h5>
 
         </div>
-
-
-
-
     </div>
 
 </script>
@@ -135,10 +160,12 @@
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.10/backbone-min.js"></script>
 <!--        BackboneJS              -->
 <script>
-    var mstatus = ["Single","Married"];
+    var mstatus = [ 
+                    "Single"    ,
+                    "Married"   
+                  ];
     person = Backbone.Model.extend({
         initialize:function (){
-            //console.log("Hello world!");
             this.bind("change:name",function(){
                 console.log(this.get("name")+"hello");
             });
@@ -160,10 +187,11 @@
         },
                 
         events:
-            {
+        {
             "click li": "getId"
         },
-        el: "#container",		
+        
+        el:         "#container",		
         template:   _.template($("#MemberInfo").html()),
                 
         getId: function(event){
@@ -196,16 +224,14 @@
 </script>
 <script>
     var active = "Native";
-    $("#SearchBox").attr("dir","rtl");
-    $("#NewSearchResults").attr("dir","rtl");
+    $(  "#SearchBox"         ).attr(    "dir"   ,   "rtl"   );
+    $(  "#NewSearchResults"  ).attr(    "dir"   ,   "rtl"   );
+    
     $(function(){
         $('.btn').click(function(){
             $("#SearchBox").focus();
-            //$('#NewSearchResults').hide();
-            //$("#SearchBox").val("");
             $("#SearchBox").select();
             $("#SearchBox").keyup();
-            //$("#data").attr("dir","rtl");
             if(active == "Native")
             {
                 $("#SearchBox").attr("dir","rtl");
@@ -220,27 +246,7 @@
             }
         }) ;
         $("#NewSearchResults").click(function(){
-            // $("#SearchBox").focus();
         });
     });
-    /*
-    $(function () {
-        //scroller = $('.box-wrap').antiscroll().data('antiscroll');
-        $( "#Searchcriteria" ).buttonset();
-        $("input[name=radio]:radio").change(function(){
-
-            $("#data").html("");
-            $("#detailedMessage").html("");
-            $("#detailedMessage2").html("");
-            $("#SearchBox").val("").focus();
-
-        });
-        $("#nn").click(function(){alert("meeee");
-        });
-        // $().button('toggle');
-        /* $("button").click(function(){
-            alert(",e");
-        });*/
-    /*});
-     */
+   
 </script>

@@ -1,17 +1,41 @@
 <?php
 /**
- * Description of show all persons
- *
- * @author Wesam Gerges
- */
+     * Church Managment System
+     *
+     * An online application to manage churches
+     *
+     * @package     Views
+     * @author      Wesam Gerges
+     * @copyright   
+     * @license     
+     * @link        
+     * @since       Version 2.0
+     * @filesource
+     */
+   
+   // ------------------------------------------------------------------------
+   
+   /**
+    * ChurchMangementSystem show_all_persons
+    * 
+    *
+    * Show all persons
+    * 
+    * @package     ChurchMangementSystem
+    * @subpackage  Views
+    * @category    View
+    * @author      Wesam Gerges
+    * @link        
+    */
+     
 ?>
- 
           
   <?php 
         $status = array('Single','Married');
     ?>
        <h1 align="center"> Show All Persons </h1>
 	<table align="center" class="table table-bordered table-striped" style="width:50%">
+            <thead>
 	    <tr class=" bold">
 	        <th >
 	            First Name
@@ -19,10 +43,7 @@
 	        <th >
 	            Last Name
 	        </th>
-	<!--        <td >
-	            DOF
-	        </td>
-	--->        
+       
 	        <th >
 	            Phone
 	        </th>
@@ -33,7 +54,7 @@
 	            Status
 	        </th>
 	   </tr>
-
+</thead>
 <?php
 $i=1;
 foreach ($persons->result() as $person)
@@ -46,10 +67,6 @@ foreach ($persons->result() as $person)
         <td>
             <?php echo $person->LastName;?>
         </td>
-<!---        <td>
-            <?php echo ".".$person->DOF;?>
-        </td>
---->        
         <td>
             <?php
           	if( $person->Phone == "") echo " ";
@@ -83,7 +100,7 @@ $("document").ready(function(){
     $(".abc").click(function()
     {
          $.post('GetFamilyData.php', {FamilyID:$(this).attr("id")},  
-          function(data) {      //$(this).insertAfter();
+          function(data) {      
           $('#message').html(data).hide().slideDown(500);            
            }); 
     })

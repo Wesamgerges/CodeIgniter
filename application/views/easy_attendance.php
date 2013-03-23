@@ -1,9 +1,33 @@
 <?php
 /**
- * Description of attendance
- *
- * @author Wesam Gerges
- */
+     * Church Managment System
+     *
+     * An online application to manage churches
+     *
+     * @package     Views
+     * @author      Wesam Gerges
+     * @copyright   
+     * @license     
+     * @link        
+     * @since       Version 2.0
+     * @filesource
+     */
+   
+   // ------------------------------------------------------------------------
+   
+   /**
+    * ChurchMangementSystem easy_attendance
+    * 
+    *
+    * Easy Attendance
+    * 
+    * @package     ChurchMangementSystem
+    * @subpackage  Views
+    * @category    View
+    * @author      Wesam Gerges
+    * @link        
+    */
+     
 ?>
 <!DOCTYPE html>
 <html lang="en">

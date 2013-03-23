@@ -1,5 +1,34 @@
-
-<?php //include 'include/GetStatus.php';   ?>
+<?php
+/**
+     * Church Managment System
+     *
+     * An online application to manage churches
+     *
+     * @package     Views
+     * @author      Wesam Gerges
+     * @copyright   
+     * @license     
+     * @link        
+     * @since       Version 2.0
+     * @filesource
+     */
+   
+   // ------------------------------------------------------------------------
+   
+   /**
+    * ChurchMangementSystem add_family_view
+    * 
+    *
+    * Add family view
+    * 
+    * @package     ChurchMangementSystem
+    * @subpackage  Views
+    * @category    View
+    * @author      Wesam Gerges
+    * @link        
+    */
+     
+?>
 <!DOCTYPE HTML>
 <html>
     <head>

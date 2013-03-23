@@ -1,17 +1,54 @@
 <?php
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- * Description of Login_Model
- *
- * @author Wesam Gerges
- */
+  /**
+     * Church Managment System
+     *
+     * An online application to manage churches
+     *
+     * @package     Models
+     * @author      Wesam Gerges
+     * @copyright   
+     * @license     
+     * @link        
+     * @since       Version 2.0
+     * @filesource
+     */
+   
+   // ------------------------------------------------------------------------
+   
+   /**
+    * ChurchMangementSystem Login_Model Class
+    * 
+    * Extends CI_Model Class
+    *
+    * This class used to authonticate users to the system
+    * 
+    * This class uses the Authentication library to handle the operations for 
+    * checking the users creditials
+    *
+    * @package     ChurchMangementSystem
+    * @subpackage  Models
+    * @category    Model
+    * @author      Wesam Gerges
+    * @link        
+    */
+     
 class Login_Model extends CI_Model {
     
+     /**
+      * Method Login
+      * 
+      * Checks the user creditials (User Name and Password) 
+      * if it matches the information in the database.
+      * 
+      * The password is encripted using sha1 algorithm.
+      *
+      * @access  public
+      * @param   string User Name
+      * @param   string Password
+      *
+      * @return  string 
+      */
     public function login( $UserName , $password )
     {
        $query = $this -> db -> query (
